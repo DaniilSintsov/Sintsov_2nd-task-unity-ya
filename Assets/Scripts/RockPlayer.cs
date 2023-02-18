@@ -24,7 +24,7 @@ public class RockPlayer : MonoBehaviour
 
         if (Math.Abs(moveHorizontal) > 0)
         {
-            _rigidbody.AddForce(moveHorizontal * transform.right * _speed);
+            _rigidbody.AddForce(transform.right * (moveHorizontal * _speed));
         }
     }
 }
